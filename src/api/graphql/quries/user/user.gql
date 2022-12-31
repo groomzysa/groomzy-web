@@ -1,0 +1,33 @@
+query user {
+  user {
+    id
+    firstName
+    lastName
+    email
+    role
+    state
+    address {
+      id
+      streetNumber
+      streetName
+      town
+      city
+      province
+      areaCode
+    }
+    provider {
+      id
+      tradingName
+      phone
+      addresses {
+        id
+        streetNumber
+        streetName
+        town
+        city
+        province
+        areaCode
+      }
+    }
+  }
+}
